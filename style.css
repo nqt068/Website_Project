@@ -1,0 +1,561 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+/* ==============Home Page */
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),
+     rgba(0, 89, 172, 0.7)), url(images/glass_building_1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.header img{
+    width: 100px;
+    margin-left: -50px;
+    margin-top: -20px;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    display: inline-block;
+    padding: 0px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #ff4b33;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0px 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.hero-btn:hover{
+    border: 1px solid #fff;
+    background: #ff4b33;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+nav .fas{
+    display: none;
+}
+
+/* --------Events*/
+.event{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.event-col{
+    text-align: center;
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+h3{
+    text-align: center;
+    font-size: auto;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.event-col img{
+    transition: 2s;
+    background-size: cover;
+}
+.event-col:hover{
+    box-shadow: 0 0 35px 5px rgba(0, 89, 172, 0.7);
+    cursor: pointer;
+}
+.event-col:hover img{
+    transform: scale(1.05);
+    border-radius: 1em;
+}
+/* -------------- 3D Hover Effect */
+.index-container-3d-hover-effect{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    transform-style: preserve-3d;
+}
+.index-container-3d-hover-effect .box{
+    position: relative;
+    width: 400px;
+    height: auto;
+    margin: 60px 0;
+    background: #000;
+    transform-style: preserve-3d;
+    box-shadow: 0 50px 80px rgba(0, 0, 0, 0);
+    transition: 0.5s;
+}
+.index-container-3d-hover-effect .box:hover{
+    box-shadow: 0 50px 80px rgba(0, 0, 0, 0.4);
+}
+.index-container-3d-hover-effect .box .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.index-container-3d-hover-effect .row{
+    align-items: center;
+}
+.index-container-3d-hover-effect img{
+    width: 100%;
+    height: auto;
+}
+.index-container-3d-hover-effect .box .contentBx{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    right: 50px;
+    background: #fff;
+    transform: translateZ(0px) scaleY(0);
+    padding: 40px 25px;
+    transform-origin: top;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+.index-container-3d-hover-effect .box:hover .contentBx{
+    transform: translateZ(50px) scaleY(1);
+}
+.container{
+    position: relative;
+}
+/* -------------Members*/
+.member{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.member-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.member-col img{
+    width: 100%;
+    height: 100%;
+    padding-top: 0%;
+    transition: 0.5s;
+}
+
+.layer{
+    background: transparent;
+    transition: 0.5s;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: #45a5ff36;
+    cursor: pointer;
+}
+
+.layer:hover h3{
+    bottom: 5%;
+    opacity: 1;
+}
+
+/* ---------Offices*/
+.office{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.office-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.office-col img{
+    width: 80%;
+    border-radius: 10px;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    transition: 0.5s;
+}
+
+.office-col p{
+    padding-bottom: 0;
+    text-align: left;
+    transition: 0.5s;
+}
+
+.office-col h3{
+    text-align: left;
+    margin-bottom: 16px;
+    margin-bottom: 15px;
+    transition: 0.5s;
+}
+
+.office-col:hover p{
+    transform: translateX(25%);
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.office-col:hover h3{
+    transform: translateX(25%);
+}
+
+.office-col:hover img{
+    width: 90%;
+    border-radius: 50%;
+}
+
+/* -------------Testimonials*/
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.testimonials-col {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #ffc8c8;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.testimonials-col img{
+    height: 100px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.testimonials-col p{
+    padding: 0;
+}
+
+.testimonials-col .fas{
+    color: rgb(0, 0, 0);
+    animation-name: glitter;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.testimonials-col .far{
+    color: #000;
+    animation-name: glitter;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.testimonials-col:hover .far{
+    color: #fff01dc4;
+    animation-name: none;
+}
+
+.testimonials-col:hover .fas{
+    color: #fff01dc4;
+    animation-name: none;
+}
+
+.testimonials-col:hover img{
+    height: 105px;
+}
+
+@keyframes glitter {
+    0% {color: #000;}
+    50% {color: #f44336;}
+    100% {color: #000;}
+}
+@keyframes text_glitter {
+    0% {color: #fff;}
+    50% {color: #f44336;}
+    100% {color: #fff;}
+}
+
+/* -------------Contact*/
+.contact{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), 
+    rgba(0,0,0,0.7)), url(images/glass_building_2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.contact h1{
+    color: #fff;
+}
+
+.contact p{
+    font-weight: 700;
+    animation-name: text_glitter;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+/* --------------Footer*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.footer .fab{
+    width: 30px;
+    transition: 0.5s;;
+}
+.footer:hover .fab{
+    width: 50px;
+}
+.footer:hover h4{
+    font-size: large;
+}
+.fab:hover{
+    color: #ff4b33;
+}
+/* ========================ABOUT PAGE */
+.sub-header{
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),
+     rgba(0, 89, 172, 0.7)), url(images/glass_building_1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+.sub-header img{
+    width: 100px;
+    margin-left: -50px;
+    margin-top: -20px;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+/* ------------about us content */
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-us-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-us-col img{
+    width: 100%;
+    transition: 0.5s;
+}
+.about-us-col:hover img{
+    width: 105%;
+
+}
+.about-us-col h2{
+    padding-top: 0px;
+    transition: 0.5s;
+}
+.about-us-col:hover h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.about-us-col p{
+    padding: 15px 0 25px;
+    transition: 0.5s;
+}
+.about-us-col:hover p{
+    padding-left: 20%;
+}
+.blue-btn{
+    border: 1px solid #0066ffd0;
+    background: transparent;
+    color: #fff;
+    font-weight: 900;
+}
+.blue-btn{
+    border: 1px solid #0066ffd0;
+    background: transparent;
+    color: #f44336;
+}
+.blue-btn:hover{
+    background-color: #0066ffd0;
+}
+/* ==============Blog  Page*/
+/* -------------3D Hover Effect */
+.container-3d-hover-effect{
+    position: relative;
+    background-size: cover;
+    
+    margin-top: 100px;
+    background: rgba(0,0,0,.7);
+    transition: 0.5s;
+}
+.container-3d-hover-effect:hover{
+    transform: rotate(-30deg) skew(25deg) scale(.8);
+}
+.container-3d-hover-effect img{
+    position: absolute;
+    width: 100%;
+    transition: 1s;
+}
+.container-3d-hover-effect h2{
+    transition: 1s;
+}
+.container-3d-hover-effect p{
+    transition: 1s;
+}
+.container-3d-hover-effect .btn-outline-primary{
+    transition: 1s;
+}
+.container-3d-hover-effect .btn-outline-secondary{
+    transition: 1s;
+}
+.container-3d-hover-effect:hover h2{
+    transform: translate(120px, -120px);
+    opacity: 1;
+    color:rgba(0, 89, 172, 0.7)
+}
+.container-3d-hover-effect:hover p{
+    transform: translate(80px, -80px);
+    opacity: .8;
+    color: black;
+    font-size: larger;
+}
+.container-3d-hover-effect:hover .btn-outline-primary{
+    transform: translate(40px, -40px);
+    opacity: .8;
+}
+.container-3d-hover-effect:hover .btn-outline-secondary{
+    transform: translate(10px, -10px);
+    opacity: .8;
+}
+
+
+
+
+
+
